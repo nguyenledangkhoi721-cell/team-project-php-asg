@@ -1,0 +1,7 @@
+{
+  "host": "REPLACE_RDS_ENDPOINT",
+  "database": "team_project",
+  "username": "team_app",
+  "password": "REPLACE_PRIVATE_PASSWORD",
+  "ssl_ca": "/etc/ssl/certs/aws-rds-global-bundle.pem"
+}

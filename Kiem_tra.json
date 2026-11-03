@@ -1,0 +1,39 @@
+{
+  "php_syntax": [
+    "public/health.php",
+    "public/index.php",
+    "src/bootstrap.php",
+    "src/database.php",
+    "src/DatabaseSessionHandler.php",
+    "tests/mysql-session-test.php"
+  ],
+  "json": [
+    "config/database.example.json",
+    "deploy/parameter-read-policy.json",
+    "monitoring/cloudwatch-agent.json"
+  ],
+  "http_tests": [
+    "two independent PHP server processes",
+    "same CSRF token across web processes",
+    "GET on node A POST on node B",
+    "shared member data visible on node A",
+    "session ID remains stable",
+    "XSS escaped",
+    "overdue task",
+    "task visible on alternate node",
+    "task update across nodes",
+    "foreign key restriction",
+    "missing CSRF rejected",
+    "health ready 18881",
+    "health ready 18882",
+    "health returns 503 until ready",
+    "data and session remain after one server exits"
+  ],
+  "not_verified": [
+    "MySQL GET_LOCK and RDS TLS",
+    "User data execution on Ubuntu",
+    "IAM and CloudWatch services",
+    "ALB and Auto Scaling in AWS"
+  ],
+  "test_database": "SQLite adapter on a temporary copy; MySQL upsert adapted, GET_LOCK mocked, no RDS or lock concurrency validation"
+}
